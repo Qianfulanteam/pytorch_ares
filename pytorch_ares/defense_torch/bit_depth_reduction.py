@@ -6,12 +6,6 @@ class BitDepthReduction(object):
         self.device = device
       
 
-    def defend(self, xs):
-        xs_compress = self.bit_depth_reduction(xs)
-        output = self.model(xs_compress)
-
-        return output
-
     def bit_depth_reduction(self, xs):
         bits = 2 ** self.compressed_bit #2**i
         xs_compress = (xs.detach() * bits).int()
