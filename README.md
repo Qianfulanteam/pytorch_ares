@@ -21,7 +21,7 @@ The requirements.txt includes its dependencies.
     - `dataset_torch/`: Data processing for cifar10 and imagenet datasets.
     - `attack_torch/`: PyTorch implementation of some adversarial attack methods.
     - `cifar10_model/`: PyTorch implementation of some adversarial defense models on the cifar10 dataset.
-    - `defense_torch/`: PyTorch implementation of some adversarial defense methods.
+    - `defense_torch/`: PyTorch implementation of some defense methods.
   - `third_party/`: Other open source repositories.
   - `attack_benchmark/`: Adversarial robustness benchmarks for image classification.
  ## Supported Methods
