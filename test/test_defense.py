@@ -3,7 +3,7 @@ import timm
 import os
 os.environ['TORCH_HOME']=os.path.join(os.path.abspath(os.path.dirname(__file__)),'model')
 import torch
-from pytorch_ares.example.cifar10.pytorch_cifar10.models import *
+from third_party.example.cifar10.pytorch_cifar10.models import *
 from pytorch_ares.dataset_torch.datasets_test import datasets
 from pytorch_ares.defense_torch import *
 from pytorch_ares.attack_torch import *
