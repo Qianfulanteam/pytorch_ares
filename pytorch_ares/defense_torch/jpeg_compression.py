@@ -17,10 +17,6 @@ class Jpeg_compresssion(object):
         self.model = model
         self.device = device
     
-    def defend(self, x):
-        xs = self.jpegcompression(x).to(self.device)
-        return self.model(xs)
-    
     
     def jpegcompression(self, x):
         lst_img = []
