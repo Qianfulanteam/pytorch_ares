@@ -10,9 +10,6 @@ class Randomization(object):
         self.model = model
         self.device = device
 
-    def defend(self, xs):
-        xs_ = self.input_transform(xs).to(self.device)
-        return self.model(xs_)
 
     def input_transform(self, xs):
         p = torch.rand(1).item()
